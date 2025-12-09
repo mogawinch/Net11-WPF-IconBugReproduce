@@ -11,11 +11,6 @@ namespace TestWindow
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-
-            Loaded += (sender, e) =>
-            {
-                Icon = new BitmapImage(new Uri("pack://application:,,,/TestWindow;component/VideoGeneric.ico"));
-            };
         }
     }
 }
