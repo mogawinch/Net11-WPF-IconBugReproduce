@@ -8,13 +8,11 @@
         Icon="pack://application:,,,/TestWindow;component/VideoGeneric.ico"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox ItemsSource="{Binding Items}" />
         <TextBlock Text="Loading..."
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontSize="24"
-                   Foreground="Red"
-                   Visibility="{Binding IsLoading, Converter={StaticResource BoolToVisibility}}" />
+                   Foreground="Red"/>
     </Grid>
 
 </Window>

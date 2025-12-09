@@ -1,4 +1,6 @@
-﻿namespace TestWindow
+﻿using System.Windows.Media.Imaging;
+
+namespace TestWindow
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -9,6 +11,11 @@
         {
             InitializeComponent();
             DataContext = new MainViewModel();
+
+            Loaded += (sender, e) =>
+            {
+                Icon = new BitmapImage(new Uri("pack://application:,,,/TestWindow;component/VideoGeneric.ico"));
+            };
         }
     }
 }

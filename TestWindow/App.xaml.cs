@@ -16,7 +16,7 @@ namespace TestWindow
             Thread.Sleep(TimeSpan.FromSeconds(6));
 
             // Create and show the main window after the delay
-            var mainWindow = new Window();
+            var mainWindow = new MainWindow();
             mainWindow.Show();
         }
 
